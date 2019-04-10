@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title_page}}</title>
+    </head>
+    <body>
+        {{> header}}
+        {{> navigation_bar}}
+
+        <a href="/character_creation">Create new Character</a>
+        <br>
+        <a href="fight">Go Fighting</a>
+        <br>
+        <a href="/update_name">Update Character Name</a>
+        <br>
+
+        <h1>Character Page</h1>
+        {{> character_stats}}
+        {{> back_button}}
+        <form method="POST" action="/delete">
+            <input type="submit" value="Delete Existing Character">
+        </form>
+    </body>
+</html>

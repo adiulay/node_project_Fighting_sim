@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title_page}}</title>
+</head>
+<body>
+    {{> navigation_bar}}
+    <h1>{{> header}}</h1>
+
+    <form style="border:1px solid #ccc" method="POST" action="/create_character">
+        <label>
+            <b>Character Name</b>
+            <br>
+            <input label="name" type="text" placeholder="Enter Character Name" name="character_name" required minlength="1">
+            <br><br>
+            <input type="submit" value="Create">
+        </label>
+    </form>
+    <h1>{{output_error}}</h1>
+
+</body>
+</html>

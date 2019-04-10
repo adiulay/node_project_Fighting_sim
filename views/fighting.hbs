@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title_page}}</title>
+</head>
+
+<body>
+
+{{> navigation_bar}}
+<h1>{{> header}}</h1>
+
+
+<!--<input type="button" onclick="testtest" value="test-button">-->
+
+<b>{{character_name}}</b>
+<p id="jimmy">{{health_player}}</p>
+<p id="dps_player">{{dps_player}}</p>
+<p id="new_health_player"></p>
+
+<br><br>
+
+<b>{{enemy_name}}</b>
+<p id="health_enemy">{{health_enemy}}</p>
+<p id="dps_enemy">{{dps_enemy}}</p>
+
+<br><br>
+<form method="get" action="/fight/update_stats">
+    <button type="submit">Fight!</button>
+</form>
+<a href="/character">Back to Characters</a>
+
+<br>
+<b>{{outcome}}</b>
+
+
+{{welcome}}
+</body>
+</html>
